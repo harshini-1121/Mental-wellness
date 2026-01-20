@@ -1,0 +1,61 @@
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Talk to MindGo AI</h1>
+    <p>Personalized mental wellness support at your fingertips</p>
+    <div class="chat-box">
+      <input type="text" [(ngModel)]="chatMessage" placeholder="Type your message..." />
+      <button (click)="goToChat()">Send</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+  <h2>About Wellness</h2>
+  <p>
+    Our wellness app helps you track your mood, interact with AI for mental support,
+    and participate in events to improve your overall wellbeing. We combine technology 
+    with personalized guidance to make mental health accessible for everyone.
+  </p>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features-section">
+  <h2>Rethinking Personal Wellness</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>Care that fits every setting</h3>
+      <p>Accessible wellness solutions that integrate with your lifestyle and needs.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Support across the continuum</h3>
+      <p>From first steps to ongoing follow-up, stay connected with our guidance.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Outcomes that matter</h3>
+      <p>Improve engagement, reduce stress, and build better mental health habits.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS SECTION -->
+<section class="news-section">
+  <h2>Latest News</h2>
+  <div class="news-grid">
+    <div class="news-card" *ngFor="let news of newsList">
+      <img [src]="news.image" alt="news image" />
+      <h4>{{ news.title }}</h4>
+      <p>{{ news.description }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="socials">
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+  <p>&copy; 2025 Wellness App. All rights reserved.</p>
+</footer>

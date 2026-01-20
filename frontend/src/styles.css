@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background: #6c63ff;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card input, .card button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.card button {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #574fd6;
+}
+
+.toggle {
+  color: #6c63ff;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.message, .feedback {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.messages {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.events button {
+  margin-top: 0.5rem;
+}
+
+.mood .buttons button {
+  width: 48%;
+  margin: 0.25rem 1%;
+}
